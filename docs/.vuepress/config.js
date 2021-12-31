@@ -33,6 +33,37 @@ module.exports = {
 					],
 				}, ],
 			},
+			{
+				text: '开发手册',
+				children: [{
+					text: '文档手册',
+					children: [{
+							text: 'vue',
+							link: 'https://cn.vuejs.org/v2/api/'
+						},
+						{
+							text: 'vuex',
+							link: 'https://vuex.vuejs.org/zh/api/#vuex-store'
+						},
+						{
+							text: 'Axios',
+							link: 'https://www.kancloud.cn/yunye/axios/234845'
+						},
+						{
+							text: 'jQuery',
+							link: 'https://www.jquery123.com/'
+						},
+						{
+							text: 'bootstrap',
+							link: 'https://www.runoob.com/bootstrap/bootstrap-tutorial.html'
+						},
+						{
+							text: 'markdown语法',
+							link: 'https://commonmark.org/help/'
+						},
+					],
+				}, ],
+			},
 			// 控制元素何时被激活
 			{
 				text: '其他站点',
@@ -67,15 +98,55 @@ module.exports = {
 					},
 					{
 						text: '算法',
-						link: 'https://github.com',
+						link: '/java/algorithm/index.vue',
 						children: [],
 					},
-					// 字符串 - 页面文件路径
-					'/foo/bar.md',
+					{
+						text: 'jvm',
+						link: '/java/jvm/index.md',
+						//children: [],
+					},
+					{
+						text: 'jdk',
+						link: '/java/jdk/index.md',
+						//children: [],
+					},
+					{
+						text: '集合',
+						children: [{
+								text: '概述',
+								link: '/java/algorithm/index.vue',
+								children: [],
+							},
+							{
+								text: 'HashMap',
+								link: '/java/collection/hashmap.md',
+								children: [],
+							},
+							{
+								text: 'ArrayList',
+								link: '/java/collection/arraylist.md',
+								children: [],
+							},
+						],
+					},
 				],
 			},
-			// 字符串 - 页面文件路径
-			'/bar/README.md',
+			{
+				text: '前端',
+				link: '/foo/',
+				children: [{
+						text: '关于前端',
+						link: '/foo/',
+						children: []
+					},
+					{
+						text: 'vue',
+						link: '/front/vue/index.md',
+						children: []
+					},
+				]
+			},
 		],
 		sidebarDepth: 3
 	},
